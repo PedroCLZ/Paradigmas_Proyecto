@@ -171,7 +171,7 @@ class Reader:
 
             dataframe = self.read_file(file)
 
-            dataframe["Universidad"] = file.parent.name
+            dataframe["University"] = file.parent.name
 
             dataframe["Archivo_Origen"] = file.name
 
