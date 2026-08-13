@@ -1,9 +1,8 @@
-from numpy import rint
-
 from reader import Reader
 from cleaner import Cleaner
-import university_analyzer as ua 
-import general_analyzer as ga 
+from visualization import Visualizer
+import university_analyzer as ua
+import general_analyzer as ga
 
 def main():
     reader = Reader()
@@ -155,6 +154,9 @@ def main():
         print("=" * 60)
 
         print(ga.relevant_relationships(summary))
+
+        visualizer = Visualizer()
+        visualizer.export_all(clean_dataframe, summary)
 
     except Exception as error:
         print(f"\nOcurrió un error inesperado:\n{error}")
