@@ -65,44 +65,61 @@ def atipical_value_detection(summary: pd.DataFrame) -> pd.DataFrame:
 
 def clustering_analysis(summary: pd.DataFrame) -> pd.DataFrame:
     """
-    Realiza clustering automático utilizando K-Means y
-    devuelve la proyección PCA junto con el cluster asignado.
+    Agrupa universidades similares usando K-Means y devuelve
+    una proyección PCA para visualizar los resultados.
     """
 
-    numeric_data = summary.select_dtypes(include="number")
+    numeric_data = summary.select_dtypes(include="number").copy()
 
     if numeric_data.empty:
         return pd.DataFrame({
-            "message": ["No existen variables numéricas para realizar clustering."]
+            "message": [
+                "No existen variables numéricas para realizar clustering."
+            ]
+        })
+
+    # Evitar errores de K-Means provocados por valores nulos
+    numeric_data = numeric_data.fillna(0)
+
+    if len(numeric_data) < 2:
+        return pd.DataFrame({
+            "message": [
+                "No hay suficientes universidades para realizar clustering."
+            ]
         })
 
     scaler = StandardScaler()
     scaled_data = scaler.fit_transform(numeric_data)
 
-    # Número de clusters
+    # Utilizar un máximo de tres clusters
     n_clusters = min(3, len(numeric_data))
-
-    if n_clusters < 2:
-        return pd.DataFrame({
-            "message": ["No hay suficientes registros para realizar clustering."]
-        })
 
     kmeans = KMeans(
         n_clusters=n_clusters,
         random_state=42,
-        n_init="auto"
+        n_init=10,
     )
 
     clusters = kmeans.fit_predict(scaled_data)
 
-    pca = PCA(n_components=2)
-    pca_data = pca.fit_transform(scaled_data)
+    # PCA necesita al menos dos variables
+    if numeric_data.shape[1] >= 2:
+        pca = PCA(n_components=2)
+        pca_data = pca.fit_transform(scaled_data)
 
-    result = pd.DataFrame(
-        pca_data,
-        columns=["PCA1", "PCA2"],
-        index=summary.index
-    )
+        result = pd.DataFrame(
+            pca_data,
+            columns=["PCA1", "PCA2"],
+            index=summary.index,
+        )
+    else:
+        result = pd.DataFrame(
+            {
+                "PCA1": scaled_data[:, 0],
+                "PCA2": 0,
+            },
+            index=summary.index,
+        )
 
     result["Cluster"] = clusters
 

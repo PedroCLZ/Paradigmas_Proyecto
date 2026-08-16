@@ -1,0 +1,176 @@
+INFORME FINAL DEL ANÁLISIS DE UNIVERSIDADES GKS
+======================================================================
+
+1. INFORMACIÓN GENERAL
+----------------------------------------------------------------------
+Registros analizados: 1068
+Universidades analizadas: 15
+Variables analizadas: 17
+
+2. RESUMEN NUMÉRICO POR UNIVERSIDAD
+----------------------------------------------------------------------
+                                      Maestrías  Doctorado  Departamentos  Campos  Idiomas  Campus
+university                                                                                        
+GIST                                         11         11             11       2        1       1
+Gyeongkuk National University                45         38             45       5        2       1
+Hankuk University of Foreign Studies        123        110             72       5       10       4
+Hannam University                            44         44             46       6        3       2
+Hanyang University                            0          0            175       8        4       1
+Hanyang University ERICA                     49         48             48       5        1       1
+Hongik University                            36         38             56       4        2       1
+Hoseo University                             36         28             36       5        2       2
+Incheon National University                  15         13             15       5        3       1
+Inha University                              72         68             72       7        3       1
+Inje University                              35         22             39       7        3       2
+Jeju National University                     66         72             81       7        2       1
+Jeonbuk National University                  82         75             88       8        8       2
+KAIST                                        24         23             26       4        1       2
+Kangwon National University                 172        150            195       7        4       4
+
+3. DISTRIBUCIÓN DE UBICACIONES
+----------------------------------------------------------------------
+                Categoría  Cantidad
+                    Seoul       343
+                Chuncheon       105
+                  Incheon        87
+   Jeonbuk State / Jeonju        85
+                      Ara        81
+                    Ansan        49
+Gyeongsangbuk-Do / Andong        45
+                Gangneung        43
+     Ojeongdong / Daejeon        40
+       Gyeongnam / Gimhae        36
+
+4. DISTRIBUCIÓN DE CAMPOS DE ESTUDIO
+----------------------------------------------------------------------
+                  Categoría  Cantidad
+                Engineering       272
+            Natural Science       206
+                 Humanities       199
+             Social Science       188
+     Entertainment & Sports       118
+                   Medicine        50
+                  Education        29
+Artificial Intelligence(AI)         5
+
+5. IDIOMAS DE MAESTRÍA
+----------------------------------------------------------------------
+                 Categoría  Cantidad
+               Korean 100%       657
+          Korean / English       193
+              English 100%        55
+            Other Language         3
+         Korean / Japanese         2
+          Korean / Chinese         2
+              Chinese 100%         2
+          Korean / Spanish         1
+  Korean / Other languages         1
+Korean / Chinese / English         1
+
+6. IDIOMAS DE DOCTORADO
+----------------------------------------------------------------------
+                 Categoría  Cantidad
+               Korean 100%       617
+          Korean / English       179
+              English 100%        48
+            Other Language         3
+         Korean / Japanese         2
+          Korean / Chinese         2
+          Korean / Spanish         1
+  Korean / Other languages         1
+Korean / Chinese / English         1
+              Chinese 100%         1
+
+7. REQUISITOS TOPIK PARA MAESTRÍA
+----------------------------------------------------------------------
+                                                                                                                                                           Categoría  Cantidad
+                                                                                                                                                    TOPIK 3 or above       890
+                                                                                                                                                    TOPIK 4 or above        74
+                                                                                                                                                    TOPIK 5 or above        11
+                                                                                                            ※ Qualification for Application : TOPIK Level 5 or above         2
+                                                                                                                                                    TOPIK 6 or above         2
+SCL course :TOPIK 4 or above GSCL course: Meeting one of the following TOEIC : 700 or above / TOEFL(iBT ):71or above / IELTS : 5.5or above / NEW TEPS : 327 or above         1
+
+8. REQUISITOS TOPIK PARA DOCTORADO
+----------------------------------------------------------------------
+                                               Categoría  Cantidad
+                                        TOPIK 3 or above       819
+                                        TOPIK 4 or above        73
+                                        TOPIK 5 or above        12
+※ Qualification for Application : TOPIK Level 5 or above         2
+                                        TOPIK 6 or above         2
+
+9. INICIO DE MAESTRÍAS
+----------------------------------------------------------------------
+            Categoría  Cantidad
+   March or September       988
+March, September 2026         1
+                March         1
+
+10. INICIO DE DOCTORADOS
+----------------------------------------------------------------------
+         Categoría  Cantidad
+March or September       917
+             March         1
+
+11. INTERPRETACIÓN GENERAL
+----------------------------------------------------------------------
+- Ubicación: Seoul es la ubicación con mayor cantidad de registros de programas (343). Esto indica una concentración importante de la oferta académica en esa zona.
+- Campo de estudio: Engineering es el campo con mayor presencia, con 272 registros. Esto permite identificar una de las áreas académicas predominantes.
+- Idioma de maestría: la modalidad más frecuente es 'Korean 100%', presente en 657 registros. El idioma de enseñanza es relevante para valorar la accesibilidad de los programas para estudiantes internacionales.
+- Idioma de doctorado: la modalidad más frecuente es 'Korean 100%', presente en 617 registros.
+- TOPIK para maestría: el requisito más común es 'TOPIK 3 or above', registrado en 890 programas.
+- TOPIK para doctorado: el requisito más común es 'TOPIK 3 or above', presente en 819 registros.
+- Inicio de maestrías: la opción más frecuente es 'March or September', presente en 988 registros.
+- Inicio de doctorados: la opción más frecuente es 'March or September', presente en 917 registros.
+- Programas relacionados con Inteligencia Artificial: se encontraron 11 registros cuyo departamento contiene 'Artificial Intelligence' o el término independiente 'AI'.
+
+12. UNIVERSIDADES Y CLUSTERS
+----------------------------------------------------------------------
+                                      Maestrías  Doctorado  Departamentos  Campos  Idiomas  Campus  Cluster
+university                                                                                                 
+GIST                                         11         11             11       2        1       1        0
+Gyeongkuk National University                45         38             45       5        2       1        0
+Hankuk University of Foreign Studies        123        110             72       5       10       4        1
+Hannam University                            44         44             46       6        3       2        2
+Hanyang University                            0          0            175       8        4       1        2
+Hanyang University ERICA                     49         48             48       5        1       1        0
+Hongik University                            36         38             56       4        2       1        0
+Hoseo University                             36         28             36       5        2       2        0
+Incheon National University                  15         13             15       5        3       1        0
+Inha University                              72         68             72       7        3       1        2
+Inje University                              35         22             39       7        3       2        2
+Jeju National University                     66         72             81       7        2       1        2
+Jeonbuk National University                  82         75             88       8        8       2        1
+KAIST                                        24         23             26       4        1       2        0
+Kangwon National University                 172        150            195       7        4       4        1
+
+13. PERFIL PROMEDIO DE LOS CLUSTERS
+----------------------------------------------------------------------
+         Maestrías  Doctorado  Departamentos  Campos  Idiomas  Campus
+Cluster                                                              
+0            30.86      28.43          33.86    4.29     1.71    1.29
+1           125.67     111.67         118.33    6.67     7.33    3.33
+2            43.40      41.20          82.60    7.00     3.00    1.40
+
+14. INTERPRETACIÓN DE LOS CLUSTERS
+----------------------------------------------------------------------
+Grupo 0: universidades con una oferta académica comparativamente reducida.
+Universidades: GIST, Gyeongkuk National University, Hanyang University ERICA, Hongik University, Hoseo University, Incheon National University, KAIST.
+Promedios del grupo: 30.86 maestrías, 28.43 doctorados, 33.86 departamentos, 4.29 campos, 1.71 idiomas y 1.29 campus.
+
+Grupo 1: universidades con una oferta académica amplia, con una cantidad elevada de maestrías y departamentos.
+Universidades: Hankuk University of Foreign Studies, Jeonbuk National University, Kangwon National University.
+Promedios del grupo: 125.67 maestrías, 111.67 doctorados, 118.33 departamentos, 6.67 campos, 7.33 idiomas y 3.33 campus.
+
+Grupo 2: universidades con una oferta académica intermedia.
+Universidades: Hannam University, Hanyang University, Inha University, Inje University, Jeju National University.
+Promedios del grupo: 43.40 maestrías, 41.20 doctorados, 82.60 departamentos, 7.00 campos, 3.00 idiomas y 1.40 campus.
+
+15. CONCLUSIÓN
+----------------------------------------------------------------------
+El análisis permitió estudiar la oferta académica de las universidades GKS considerando maestrías, doctorados, departamentos, campos de estudio, idiomas, ubicaciones, requisitos TOPIK y fechas de inicio.
+El algoritmo K-Means agrupó las universidades según similitudes en su oferta académica. Las interpretaciones permiten comprender las características principales de cada grupo.
+
+Los gráficos se encuentran en:
+output/images
